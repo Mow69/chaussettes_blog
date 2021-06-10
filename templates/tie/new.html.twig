@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Tie{% endblock %}
+
+{% block body %}
+    <h1>Create new Tie</h1>
+
+    {{ include('tie/_form.html.twig') }}
+
+    <a href="{{ path('tie_index') }}">back to list</a>
+{% endblock %}
